@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: io.javaspring.springbootquickstart
+Build-Jdk: 1.8.0_45
+Built-By: robin
+Created-By: IntelliJ IDEA
+Main-Class: ${start-class}
+
