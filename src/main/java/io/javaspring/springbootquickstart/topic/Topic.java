@@ -1,9 +1,14 @@
 package io.javaspring.springbootquickstart.topic;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * Created by robin on 2/10/18.
  */
+@Entity
 public class Topic {
+    @Id
     private String id;
     private String name;
     private String description;
