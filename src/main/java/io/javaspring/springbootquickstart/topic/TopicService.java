@@ -15,7 +15,7 @@ public class TopicService {
 
     List<Topic> topics = new ArrayList<>(Arrays.asList(new Topic("spring", "Spring Framework", "Spring Framework Description"),
             new Topic("java", "Java Core", "Java Core Description"),
-            new Topic("javaScript", "JavaScript", "Javascript Description")));
+            new Topic("javascript", "Javascript", "Javascript Description")));
 
     public List<Topic> getAllTopics() {
         return topics;
@@ -38,4 +38,15 @@ public class TopicService {
             }
         }
     }
+
+    public void deleteTopic(String id, Topic topic) {
+        for (int i = 0; i < topics.size(); i++) {
+            Topic t = topics.get(i);
+            if (t.getId().equals(id)) {
+                topics.remove(t);
+                return;
+            }
+        }
+    }
+
 }
